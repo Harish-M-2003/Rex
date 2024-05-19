@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, Text } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -15,6 +15,7 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
+        <Text className='text-green-500'>Logo green</Text>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
@@ -23,6 +24,7 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
           Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
+          <Text className='text-green-500'>jnjff</Text>
           Press{' '}
           <ThemedText type="defaultSemiBold">
             {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
